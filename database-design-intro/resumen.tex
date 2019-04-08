@@ -1,0 +1,43 @@
+\documentclass[11pt]{article}
+\usepackage[spanish]{babel}
+\usepackage[utf8]{inputenc}
+
+\title{Database Design Introduction}
+
+\begin{document}
+
+\maketitle
+
+El diseño de base de datos es el esqueleto de cómo obtener los datos que requieres, en el tiempo que requieres.
+\section{¿Qué es una base de datos?}
+\begin{itemize}
+	\item Una colección de datos organizada para acceso conveniente.
+\end{itemize}
+
+Una base de datos bien diseñada permite responder todas las preguntas de negocio de forma rápida y viable. La clave, dentro de la oración anterior, es el \textbf{diseño} puesto que permite crecer a la Compañía.
+
+\section{¿Qué tipos de bases de datos hay?}
+\begin{itemize}
+	\item Un archivo plano (piensa como si fuera Excel). El problema con los archivos planos es que los datos no son uniformes y existe redundancia (los datos se repiten varias veces). 
+	\item Archivos relacionales. Existe una estructura lógica de los datos, es eficiente y reduce el riesgo de redundancia.
+\end{itemize}
+
+Respecto a las bases de datos, los campos corresponden a los atributos concernientes a determinado registro. El registro corresponde a un ítem de la tabla.
+
+Existe un campo muy importante de la tabla: la llave primaria. Es un identificador único de cada registro. Cuando trabajas con una base de datos, y tienes una tabla, \textbf{la tabla debe contener un único registro de lo que se desea medir}. Por ejemplo, si existe una tabla de estudiantes, cada registro representa un estudiante. La razón por la que se tiene dicha regla es para que solo se deba hacer un único cambio una sola vez.
+
+Recordatorio: Toda tabla debe tener una llave primaria, campos y cada registro.
+
+\section{¿Cómo diseñamos la base de datos?}
+\begin{itemize}
+	\item Necesitas determinar qué es lo que tu base de datos requiere realizar (qué función de negocio completará).
+	\item Una vez definida la función de negocio, utiliza las formas o reportes generados anteriormente para poblar la base de datos.
+	\begin{itemize}
+		\item En este paso se debe ir realizando la normalización, ya que en los reportes existen datos compuestos (por ejemplo, el nombre).
+	\end{itemize}
+	\item Conversa con los usuarios de la base de datos para definir qué es lo que requieren para que los datos le sea útiles.
+	\item "Normalizar" los datos. Esto significa eliminar la redundancia de los datos, para así tener subconjuntos lógicos de los datos.
+	\item Una vez realizados estos pasos, recién creas la base de datos.
+	
+\end{itemize}
+\end{document}
